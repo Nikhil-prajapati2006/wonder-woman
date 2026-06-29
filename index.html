@@ -267,10 +267,6 @@ text-align: center;
     margin-left: 2vw;
  }
 
-/* =======================
-   Mobile Responsive
-======================= */
-
 @media screen and (max-width: 768px) {
 
     .wonder{
@@ -280,23 +276,25 @@ text-align: center;
         background-position: center top;
         background-repeat: no-repeat;
     }
+.gradient-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 
-    .gradient-bottom{
-        height: 100vh;
-        background: linear-gradient(
-            to top,
-            rgba(0,0,0,0.95) 15%,
-            rgba(0,0,0,0.55) 45%,
-            rgba(0,0,0,0.1) 80%
-        );
-    }
-
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,1) 15%,
+        rgba(0,0,0,.85) 30%,
+        rgba(0,0,0,.45)75%,
+        transparent 100%
+    );
+}
     .tab{
-        width: 110px;
-        height: 165px;
-        left: 20px;
-        top: 63vh;
+        display: none;
     }
+
 
     .name{
         left: 155px;
@@ -305,7 +303,7 @@ text-align: center;
     }
 
     .name h1{
-        font-size: 42px;
+        font-size: 40px;
         line-height: 1;
     }
 
